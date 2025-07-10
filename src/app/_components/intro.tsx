@@ -7,14 +7,12 @@ export function Intro() {
         Blog.
       </h1>
       <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-        A statically generated blog example using{" "}
         <a
-          href="https://nextjs.org/"
+          href="https://o9medical.com/"
           className="underline hover:text-blue-600 duration-200 transition-colors"
         >
-          Next.js
+          O9 Medical
         </a>{" "}
-        and {CMS_NAME}.
       </h4>
     </section>
   );
