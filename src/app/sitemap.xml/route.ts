@@ -1,5 +1,5 @@
 export const dynamic = "force-static";
-import { getAllPosts } from "@/lib/api";
+import { getAllPosts } from "../../lib/api";
 
 export async function GET() {
   const baseUrl = "https://o9medical.com";
