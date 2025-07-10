@@ -6,7 +6,8 @@ import { join } from "path";
 const postsDirectory = join(process.cwd(), "_posts");
 
 export function getPostSlugs() {
-  return fs.readdirSync(postsDirectory);
+  // Only return .md files, ignore hidden/system files like .DS_Store
+  return fs.readdirSync(postsDirectory).filter((file) => file.endsWith('.md'));
 }
 
 export function getPostBySlug(slug: string) {
