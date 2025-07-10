@@ -33,9 +33,7 @@ const Alert = ({ preview }: Props) => {
               <a
                 href={`https://o9medical.com`}
                 className="underline hover:text-blue-600 duration-200 transition-colors"
-              >
-                available on GitHub
-              </a>
+              ></a>
               .
             </>
           )}
