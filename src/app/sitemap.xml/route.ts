@@ -4,7 +4,7 @@ import { getAllPosts } from "../../lib/api";
 export async function GET() {
   const baseUrl = process.env.VERCEL_URL
     ? `https://${process.env.VERCEL_URL}`
-    : "https://o9med-rjb2.vercel.app/";
+    : "https://o9med-rjb2.vercel.app";
   const posts = getAllPosts();
 
   const urls = posts.map(
