@@ -2,7 +2,9 @@ export const dynamic = "force-static";
 import { getAllPosts } from "../../lib/api";
 
 export async function GET() {
-  const baseUrl = "https://o9medical.com";
+  const baseUrl = process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : "https://o9med-rjb2.vercel.app/";
   const posts = getAllPosts();
 
   const urls = posts.map(
@@ -16,7 +18,8 @@ export async function GET() {
 
   return new Response(sitemap, {
     headers: {
-      "Content-Type": "application/xml",
+      "Content-Type": "application/xml; charset=utf-8",
+      "Cache-Control": "public, max-age=0, must-revalidate",
     },
   });
 }
