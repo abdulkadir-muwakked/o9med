@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://o9med-rjb2.vercel.app/sitemap.xml
+Sitemap: https://o9med-rjb2.vercel.app/sitemap-manual.xml
